@@ -6,7 +6,11 @@ This was a project I made a long time ago when I was still learning JavaScript a
 I discontinued the project and almost forgot about it but I think I should keep it since it was a project I put time into. 
 
 ## Legal
+`Bitcoin-Price-JS` is not Bitcoin in any form nor is it a cryptocurrency.  
 `Bitcoin-Price-JS` is not affiliated or endorsed by CryptoCompare nor its assets.
+
+## Project Status
+Complete.
 
 ## License
 MIT License
