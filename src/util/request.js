@@ -16,6 +16,4 @@ const get = async function(url) {
     });
 }
 
-module.exports = {
-    get
-}
+module.exports = { get };
