@@ -1,9 +1,8 @@
 # Bitcoin Price JS
-An incomplete and discontinued API wrapper of [CryptoCompare](https://min-api.cryptocompare.com/), and one of my first JavaScript / Node.JS projects.
+Gets the Bitcoin price and returns JSON data with the price based on a list of currencies.
 
 ## Overview
-This was a project I made a long time ago when I was still learning JavaScript and Node.JS  
-I discontinued the project and almost forgot about it but I think I should keep it since it was a project I put time into. 
+A simple project for getting the estimated Bitcoin price using the [CryptoCompare](https://min-api.cryptocompare.com/) API.
 
 ## Legal
 `Bitcoin-Price-JS` is not Bitcoin in any form nor is it a cryptocurrency.  
