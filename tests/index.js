@@ -1,4 +1,4 @@
 const { getBTC } = require('../src');
-getBTC("btc", ["usd", "jpy", "kwd", "cad"]).then(data => {
+getBTC("btc", ["usd", "jpy", "cad", "eur"]).then(data => {
     console.log(JSON.parse(data));
 });
