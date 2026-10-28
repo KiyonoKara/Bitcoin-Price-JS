@@ -1,6 +1,14 @@
 {
   "name": "bitcoin-price-js",
   "version": "1.0.0",
+  "description": "Gets the Bitcoin price as JSON data for a provided list of currencies from Coinbase and Binance.",
   "main": "src/index.js",
-  "bin": "src/index.js"
+  "bin": "src/index.js",
+  "scripts": {
+    "test": "node tests/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
 }
