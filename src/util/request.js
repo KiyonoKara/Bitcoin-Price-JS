@@ -1,19 +1,26 @@
-const https = require('https');
-
-/** Local GET requester
+/** GET request with JSON response with fetch
  *
- * @param url
- * @returns {Promise<string>}
+ * @param {string} url
+ * @returns {Promise<any>}
  */
-const get = async function(url) {
-    let body = "";
-    return new Promise((resolve, reject) => {
-        https.get(url, callback => {
-            callback.on('data', d => body += String(d));
-            callback.on('end', () => resolve(body));
-            callback.on('error', e => reject({ error: e }));
-        });
+const getJSON = async function (url) {
+    const response = await fetch(url, {
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        }
     });
-}
 
-module.exports = { get };
+    if (!response.ok) {
+        const error = new Error(`${response.status} ${response.statusText} from ${url}`);
+        error.status = response.status;
+        error.body = await response.text().catch(() => undefined);
+        throw error;
+    }
+
+    return response.json();
+};
+
+module.exports = {
+    getJSON
+};
